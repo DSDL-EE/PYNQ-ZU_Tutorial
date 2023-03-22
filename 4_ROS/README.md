@@ -90,9 +90,16 @@ You must source this script in every bash terminal you use ROS in.
 ```
 source /opt/ros/noetic/setup.bash
 ```
+
+Because PYNQ is based on Ubuntu, and assigned a different codename which does not match any supported OS by default. We need to set ROS_OS_OVERRIDE variable. For PYNQ image version 2.7, we set:
+```
+export ROS_OS_OVERRIDE=ubuntu:focal
+```
+
 It can be convenient to automatically source this script every time a new shell is launched. These commands will do that for you.
 ```
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "export ROS_OS_OVERRIDE=ubuntu:focal" >> ~/.bashrc
 source ~/.bashrc
 ```
 
