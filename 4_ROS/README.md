@@ -229,6 +229,9 @@ roslaunch kobuki_keyop keyop.launch
 
 Now you can use arrow buttons to adjust velocity and rotation of Kobuki robot. If everything is out-of-control, remember to press 'Space' immediately to reset velocity.
 
+### 2.8. Extensions
+After the ROS Core is installed successfully, user can attach peripherals to the PYNQ-ZU & Kobuki for more development.
+
 ## 3. PC Setup (Optional)
 This section is optional if you want to host ROS Core on PC instead of PYNQ-ZU board. In this scenario, PYNQ-ZU will be a ROS client connect to the PC.
 
