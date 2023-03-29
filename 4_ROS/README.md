@@ -280,8 +280,9 @@ source ~/.bashrc
 
 On PYNQ-ZU, configure:
 ```
-export BOARD_IP=192.168.1.103 # Change this line to match your PC's IP
-echo 'export ROS_MASTER_URI=http://'$BOARD_IP':11311' >> ~/.bashrc
+export PC_IP=192.168.1.103 # Change this line to match your PC's IP
+export BOARD_IP=192.168.1.104 # Change this line to match your PYNQ-ZU's IP
+echo 'export ROS_MASTER_URI=http://'$PC_IP':11311' >> ~/.bashrc
 echo 'export ROS_HOSTNAME='$BOARD_IP >> ~/.bashrc
 source ~/.bashrc
 ```
