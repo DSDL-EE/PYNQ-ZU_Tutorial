@@ -8,6 +8,7 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 - PS: Processing System, indicates ARM 
 - PL: Programmable Logic, means FPGA resources in an MPSoC device.
 - Soft-core: A sub processor in an heterogeneous system. These processors are usually synthesized and implemented on an FPGA.
+- Microblaze: A soft-microprocessor which is built as a sub-system for I/O control in MPSoC platforms.
 - Vitis Libraries: A library contains an extensive set of open-source, performance-optimized libraries that offer out-of-the-box acceleration with minimal to zero-code changes to your existing applications.
 - DPU: Short of Deep Learning Processor Unit - A special soft-core which is designed, synthesized and implemented on AMD FPGAs to accelerate deep learning models.
 - Vitis AI: A comprehensive AI inference development solution for AMD devices, boards, and Alveo™ data center acceleration cards. It consists of a rich set of AI models, optimized deep learning processor unit (DPU) cores, tools, libraries, and example designs for AI at the edge and in the data center.
