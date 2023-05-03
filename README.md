@@ -29,7 +29,7 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 | 3.0  | <= 2022.1    | 2.5      | 2.5      | :x: humble |
 
 **Note**
-- Installing ROS2 `humble` on PYNQ 3.0 (Belfast) is facing unresolved issue.
+- Installing ROS2 `humble` on PYNQ 3.0 (Belfast) is facing unresolved issue: APT's unmet dependencies.
 
 ## Reference
 [1] [PYNQ-ZU Github Page](https://xilinx.github.io/PYNQ-ZU/)
