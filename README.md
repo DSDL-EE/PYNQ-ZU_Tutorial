@@ -21,6 +21,14 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 - [4_ROS](4_ROS): How to install ROS and exploit the ROS-based application development.
 - [5_AI-Models-Zoo](5_AI-Models-Zoo): Develop application using pre-trained deep learning models from Vitis AI model zoo.
 
+## PYNQ-ZU Toolchain Version Compatibility Matrix
+
+| PYNQ |           Vivado/Vitis               |||| Vitis-AI | DPU-PYNQ | ROS |
+|------|:------:|:------:|:------:|:------:|----------|----------|----------|
+|      | 2020.1       | 2020.2 | 2021.1 | 2021.2 |          |          |          |
+| 2.7  | :heavy_check_mark:            | :heavy_check_mark:      | :x:      | :x:      | 1.4      | 1.4      | :heavy_check_mark: noetic |
+| 3.0  | :heavy_check_mark:            | :heavy_check_mark:      | :heavy_check_mark:      | :heavy_check_mark:      | 2.5      | 2.5      | :x: humble |
+
 ## Reference
 [1] [PYNQ-ZU Github Page](https://xilinx.github.io/PYNQ-ZU/)
 
