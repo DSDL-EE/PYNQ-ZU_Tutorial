@@ -1,6 +1,6 @@
 ## OpenCV on Processing System
 
-This part teaches you how to use OpenCV which is processed by ARM A53 CPU (PS).
+This part teaches you how to use OpenCV which is processed by ARM A53 Application Processing Unit (PS).
 
 User examines the Python code in provided example notebooks and executes the code blocks one by one.
 
