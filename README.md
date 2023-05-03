@@ -23,11 +23,13 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 
 ## PYNQ-ZU Toolchain Version Compatibility Matrix
 
-| PYNQ |           Vivado/Vitis               |||| Vitis-AI | DPU-PYNQ | ROS |
-|------|:------:|:------:|:------:|:------:|----------|----------|----------|
-|      | 2020.1       | 2020.2 | 2021.1 | 2021.2 |          |          |          |
-| 2.7  | :heavy_check_mark:            | :heavy_check_mark:      | :x:      | :x:      | 1.4      | 1.4      | :heavy_check_mark: noetic |
-| 3.0  | :heavy_check_mark:            | :heavy_check_mark:      | :heavy_check_mark:      | :heavy_check_mark:      | 2.5      | 2.5      | :x: humble |
+| PYNQ | Vivado/Vitis | Vitis-AI | DPU-PYNQ |    ROS   |
+|:----:|:------------:|:--------:|:--------:|:--------:|
+| 2.7  | <= 2020.2    | 1.4      | 1.4      | :heavy_check_mark: noetic |
+| 3.0  | <= 2022.1    | 2.5      | 2.5      | :x: humble |
+
+**Note**
+- Installing ROS2 `humble` on PYNQ 3.0 (Belfast) is facing unresolved issue.
 
 ## Reference
 [1] [PYNQ-ZU Github Page](https://xilinx.github.io/PYNQ-ZU/)
