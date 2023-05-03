@@ -2,10 +2,13 @@
 
 This repository (repo.) provides you the materials to getting started with FPGA application development using PYNQ-ZU board - an AMD (Xilinx before) Zynq Ultrascale+ development board.
 
+## PYNQ-ZU Block Diagram
+![img](9_Auxiliary/img/pynq_zu_base_overlay.png)
+
 ## Terms
 - FPGA: Field Programmable Gate Arrays
 - MPSoC: Short of Xilinx® Zynq® UltraScale+™ MultiProcessor System on a Chip (MPSoC)
-- PS: Processing System, indicates ARM 
+- PS: Processing System, indicates Arm Cortex-A53 Based Application Processing Unit (APU), and Dual-core Arm Cortex-R5F Based Real-Time Processing Unit (RPU) on MPSoC.
 - PL: Programmable Logic, means FPGA resources in an MPSoC device.
 - Soft-core: A sub processor in an heterogeneous system. These processors are usually synthesized and implemented on an FPGA.
 - MicroBlaze: A soft-microprocessor which is built as a sub-system for I/O control in MPSoC platforms.
@@ -20,6 +23,7 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 - [3_PMOD](3_PMOD): Examine I/O control via PMOD interfaces with Microblaze Subsystems.
 - [4_ROS](4_ROS): How to install ROS and exploit the ROS-based application development.
 - [5_AI-Models-Zoo](5_AI-Models-Zoo): Develop application using pre-trained deep learning models from Vitis AI model zoo.
+- [9_Auxiliary](9_Auxiliary): Several code snippets to use PYNQ-ZU with ease.
 
 ## PYNQ-ZU Toolchain Version Compatibility Matrix
 
@@ -29,10 +33,11 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 | 3.0  | <= 2022.1    | 2.5      | 2.5      | :x: humble |
 
 **Note**
+- After installing Vitis_HLS/Vivado/Vitis, follow this [instruction to patch an Y2K22 fix](https://support.xilinx.com/s/article/76960?language=en_US).
 - Installing ROS2 `humble` on PYNQ 3.0 (Belfast) is facing unresolved issue: APT's unmet dependencies.
 
 ## Reference
-[1] [PYNQ-ZU Github Page](https://xilinx.github.io/PYNQ-ZU/)
+[1] [PYNQ-ZU Documentation](https://xilinx.github.io/PYNQ-ZU/)
 
 [2] [PYNQ-ZU distributed by E-Elements](https://www.e-elements.com.tw/products/fpga_system/xup_pynq/pynq-zu/)
 
@@ -44,14 +49,22 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 
 [6] [Vitis™ Libraries Github repo.](https://github.com/Xilinx/Vitis_Libraries)
 
-[7] [DPU for Convolutional Neural Network](https://www.xilinx.com/products/intellectual-property/dpu.html)
+[7] [PYNQ documentation](https://pynq.readthedocs.io/en/v2.7.0/)
 
-[8] [DPU on PYNQ](https://github.com/Xilinx/DPU-PYNQ)
+[8] [PYNQ Frequently Asked Questions (FAQs)](https://pynq.readthedocs.io/en/v2.7.0/faqs.html)
 
-[9] [Vitis™ AI](https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html)
+[9] [PYNQ embedded community projects](http://www.pynq.io/community.html)
 
-[10] [Vitis™ AI Github repo.](https://github.com/Xilinx/Vitis-AI)
+[10] [PYNQ forum](https://discuss.pynq.io/)
 
-[11] [Xilinx Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/overview)
+[11] [DPU for Convolutional Neural Network](https://www.xilinx.com/products/intellectual-property/dpu.html)
 
-[12] [ROS - Robot Operating System](https://www.ros.org/)
+[12] [DPU on PYNQ](https://github.com/Xilinx/DPU-PYNQ)
+
+[13] [Vitis™ AI](https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html)
+
+[14] [Vitis™ AI Github repo.](https://github.com/Xilinx/Vitis-AI)
+
+[15] [Xilinx Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/overview)
+
+[16] [ROS - Robot Operating System](https://www.ros.org/)
