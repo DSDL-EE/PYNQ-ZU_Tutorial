@@ -41,6 +41,28 @@ Release:	2.7
 Codename:	Austin
 ```
 
+More details:
+```
+cat /etc/os-release
+```
+It should show:
+```
+NAME="PynqLinux"
+VERSION="2.7 (Austin)"
+ID=pynqlinux
+ID_LIKE=ubuntu
+PRETTY_NAME="PynqLinux, based on Ubuntu 20.04"
+VERSION_ID="2.7"
+HOME_URL="https://www.pynq.io/"
+SUPPORT_URL="https://discuss.pynq.io/"
+BUG_REPORT_URL="https://www.pynq.io"
+PRIVACY_POLICY_URL="https://www.pynq.io"
+VERSION_CODENAME=Austin
+UBUNTU_CODENAME=focal
+```
+
+Note that the `UBUNTU_CODENAME` variable is `focal`, which is the original Ubuntu base ported to PYNQ image 2.7, codename `Austin`.
+
 Install some basic tools.
 ```
 sudo apt purge --remove vim-tiny
