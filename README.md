@@ -29,8 +29,8 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 
 | PYNQ | Vivado/Vitis | Vitis-AI | DPU-PYNQ |    ROS   |
 |:----:|:------------:|:--------:|:--------:|:--------:|
-| 2.7 (Austin)  | <= 2020.2    | 1.4      | 1.4      | :heavy_check_mark: noetic |
-| 3.0 (Belfast) | <= 2022.1    | 2.5      | 2.5      | :x: humble |
+| 2.7 (Austin)  | <= 2020.2    | 1.4      | 1.4      | :heavy_check_mark: [noetic](4_ROS/README.md) |
+| 3.0 (Belfast) | <= 2022.1    | 2.5      | 2.5      | :x: [humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) |
 
 **Note**
 - After installing Vitis_HLS/Vivado/Vitis, follow this [instruction to patch an Y2K22 fix](https://support.xilinx.com/s/article/76960?language=en_US).
