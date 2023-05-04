@@ -3,7 +3,7 @@
 This repository (repo.) provides you the materials to getting started with FPGA application development using PYNQ-ZU board - an AMD (Xilinx before) Zynq Ultrascale+ development board.
 
 ## PYNQ-ZU Block Diagram
-![img](9_Auxiliary/img/pynq_zu_base_overlay.png)
+![img](0_Auxiliary/img/pynq_zu_base_overlay.png)
 
 ## Terms
 - FPGA: Field Programmable Gate Arrays
