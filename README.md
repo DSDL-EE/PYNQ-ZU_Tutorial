@@ -27,10 +27,10 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 
 ## PYNQ-ZU Toolchain Version Compatibility Matrix
 
-| PYNQ | Vivado/Vitis | Vitis-AI | DPU-PYNQ |    ROS   |
+| PYNQ | [Vivado/Vitis](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis.html) | Vitis-AI | DPU-PYNQ |    ROS   |
 |:----:|:------------:|:--------:|:--------:|:--------:|
-| 2.7 (Austin)  | <= 2020.2    | 1.4      | 1.4      | :heavy_check_mark: [noetic](4_ROS/README.md) |
-| 3.0 (Belfast) | <= 2022.1    | 2.5      | 2.5      | :x: [humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) |
+| [2.7 (Austin)](https://github.com/Xilinx/PYNQ/releases/tag/v2.7.0) | <= 2020.2 | [1.4.1](https://github.com/Xilinx/Vitis-AI/tree/1.4.1) | [1.4.1](https://github.com/Xilinx/DPU-PYNQ/tree/v1.4.0) | :heavy_check_mark: [noetic](4_ROS/README.md) |
+| [3.0 (Belfast)](https://github.com/Xilinx/PYNQ/releases/tag/v3.0.0) | <= 2022.1 | [2.5.x](https://github.com/Xilinx/Vitis-AI/tree/2.5.1) | [2.5.1](https://github.com/Xilinx/DPU-PYNQ/tree/v2.5.1) | :x: [humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) |
 
 **Note**
 - After installing Vitis_HLS/Vivado/Vitis, follow this [instruction to patch an Y2K22 fix](https://support.xilinx.com/s/article/76960?language=en_US).
