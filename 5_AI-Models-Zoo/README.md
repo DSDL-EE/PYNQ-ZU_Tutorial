@@ -10,6 +10,8 @@ On PYNQ-ZU, run:
 ```
 git clone -b dev_3.0.0 https://github.com/Xilinx/DPU-PYNQ
 pip3 install ./DPU-PYNQ --no-build-isolation
+cd $PYNQ_JUPYTER_NOTEBOOKS
+pynq get-notebooks pynq-dpu -p .
 ```
 
 ## 3. [Tutorial] Make a pre-trained model run on DPU
