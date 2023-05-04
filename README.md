@@ -23,7 +23,7 @@ This repository (repo.) provides you the materials to getting started with FPGA 
 - [3_PMOD](3_PMOD): Examine I/O control via PMOD interfaces with Microblaze Subsystems.
 - [4_ROS](4_ROS): How to install ROS and exploit the ROS-based application development.
 - [5_AI-Models-Zoo](5_AI-Models-Zoo): Develop application using pre-trained deep learning models from Vitis AI model zoo.
-- [9_Auxiliary](9_Auxiliary): Several code snippets to use PYNQ-ZU with ease.
+- [9_Auxiliary](9_Auxiliary): Several tips and code snippets to use PYNQ-ZU with ease.
 
 ## PYNQ-ZU Toolchain Version Compatibility Matrix
 
