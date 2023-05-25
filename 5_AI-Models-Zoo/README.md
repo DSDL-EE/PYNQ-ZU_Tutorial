@@ -1,7 +1,17 @@
 # Examine pre-trained deep learning models on PYNQ-ZU, using Vitis-AI and DPU-PYNQ
 
 ## 1. Vitis-AI - Tools on PC
-https://github.com/Xilinx/Vitis-AI/tree/v2.5
+https://github.com/Xilinx/Vitis-AI/tree/2.5
+
+It is suggested that user installs Ubuntu on a PC with NVIDIA graphics card. Otherwise, user can use CPU version, which is slower.
+
+On PC, run:
+```
+git clone -b 2.5 https://github.com/Xilinx/Vitis-AI
+cd Vitis-AI
+```
+
+User follows this [instruction](https://github.com/Xilinx/Vitis-AI/tree/2.5#installation) to install and build vitis-ai docker image.
 
 ## 2. DPU-PYNQ - Tools on PYNQ-ZU
 https://github.com/Xilinx/DPU-PYNQ/tree/dev_3.0.0
@@ -15,6 +25,10 @@ pynq get-notebooks pynq-dpu -p .
 ```
 
 ## 3. [Tutorial] Make a pre-trained model run on DPU
+### 3.1. Object Detection: YOLOv3 on VOC
+- Example notebook: [dpu_yolov3.ipynb](https://github.com/Xilinx/DPU-PYNQ/blob/master/pynq_dpu/notebooks/dpu_yolov3.ipynb)
+- Tutorial: [Object Detection with YOLOv3](DPU-PYNQ_YOLOv3.md)
+### 3.2. Segmentation: ENet on Cityscapes
 - Example notebook: [dpu_enet_cityscapes.ipynb](https://github.com/Xilinx/DPU-PYNQ/blob/dev_3.0.0/pynq_dpu/notebooks/dpu_enet_cityscapes.ipynb)
 - Tutorial: [20230420_DSDL_Segmentation_ENet_PYNQ.pdf](20230420_DSDL_Segmentation_ENet_PYNQ.pdf)
 
