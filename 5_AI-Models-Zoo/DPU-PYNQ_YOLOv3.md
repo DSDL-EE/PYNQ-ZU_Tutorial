@@ -264,12 +264,12 @@ Here is the main flow of this example notebook:
 5. Define ultility functions.
 6. Initialize VART (Vitis AI RunTime), and pre-allocate buffers for DPU.
 7. Define `run()` function to invoke DPU.
-7.1. Read input image.
-7.2. Pre-processing.
-7.3. Fetch data to DPU and trigger it.
-7.4. Retrieve output data
-7.5. Decode outputs, using ultility functions defined in 5.
-7.6. Conditionally display the output.
+- 7.1. Read input image.
+- 7.2. Pre-processing.
+- 7.3. Fetch data to DPU and trigger it.
+- 7.4. Retrieve output data
+- 7.5. Decode outputs, using ultility functions defined in 5.
+- 7.6. Conditionally display the output.
 8. Call `run()` with one input, and display output image.
 9. Measure performance.
 10. Remove VART references and clean up FPGA resources.
