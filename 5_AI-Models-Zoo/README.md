@@ -30,7 +30,9 @@ pynq get-notebooks pynq-dpu -p .
 - Tutorial: [Object Detection with YOLOv3](DPU-PYNQ_YOLOv3.md)
 ### 3.2. Object Detection: YOLOv3 and webcam
 - Example notebook: [dpu_yolov3_webcam.ipynb](dpu_yolov3_webcam.ipynb)
-### 3.3. Segmentation: ENet on Cityscapes
+### 3.3. Object Detection: YOLOv3 on GStreamer video stream
+- Example notebook: [dpu_yolov3_gstreamer.ipynb](dpu_yolov3_gstreamer.ipynb)
+### 3.4. Segmentation: ENet on Cityscapes
 - Example notebook: [dpu_enet_cityscapes.ipynb](https://github.com/Xilinx/DPU-PYNQ/blob/dev_3.0.0/pynq_dpu/notebooks/dpu_enet_cityscapes.ipynb)
 - Tutorial: [20230420_DSDL_Segmentation_ENet_PYNQ.pdf](20230420_DSDL_Segmentation_ENet_PYNQ.pdf)
 
