@@ -74,6 +74,7 @@ sudo apt-get install vim net-tools
 ## 1. ROS Noetic Installation
 ### 1.1. Setup your sources.list
 ```
+curl http://repo.ros2.org/repos.key | sudo apt-key add -
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt update
 ```
