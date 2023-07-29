@@ -27,6 +27,15 @@
   - [3.5. Launch](#35-launch)
 - [Reference](#reference)
 
+### IMPORTANT NOTE
+- It is not recommended to use "root" account. Properly switch to "xilinx" by:
+```
+su xilinx
+```
+The default password is `xilinx`.
+
+- Better use actual terminal or MobaXterm when run `roscore`.
+
 ## System Check
 Review the PYNQ image's information by running:
 ```
@@ -93,6 +102,11 @@ sudo apt install ros-noetic-desktop-full
 ```
 
 ### 1.4. Environment setup
+Make sure you are using `xilinx` account before the folllowing steps:
+```
+su xilinx
+```
+
 You must source this script in every bash terminal you use ROS in.
 ```
 source /opt/ros/noetic/setup.bash
@@ -177,7 +191,8 @@ This example shows how to integrate PYNQ-ZU as a controller, with a ROS-based ro
 ### 2.1. Prepare the workspace to compile ROS components & drivers for Kobuki
 On PYNQ-ZU, run:
 ```
-mkdir kobuki_ws && cd kobuki_ws
+su xilinx # skip this command if you use `xilinx` account already
+mkdir ~/kobuki_ws && cd ~/kobuki_ws
 mkdir src
 catkin_make
 rosdep install --from-paths src --ignore-src -r -y
@@ -204,6 +219,7 @@ rm -r yocs_ar_marker_tracking yocs_ar_pair_approach \
 ### 2.3. Install pre-built dependencies for Kobuki workspace
 On PYNQ-ZU, run:
 ```
+su xilinx # skip this command if you use `xilinx` account already
 cd ~/kobuki_ws
 sudo apt-get install -y ros-noetic-kobuki-*
 sudo apt-get install -y liborocos-kdl-dev
@@ -212,6 +228,7 @@ sudo apt-get install -y ros-noetic-ecl-*
 
 ### 2.4. Compile ROS components for Kobuki
 ```
+su xilinx # skip this command if you use `xilinx` account already
 cd ~/kobuki_ws
 catkin_make
 ```
@@ -223,6 +240,7 @@ echo "source $HOME/kobuki_ws/devel/setup.bash" >> ~/.bashrc
 
 ### 2.6. Install Kobuki's chassis driver
 ```
+su xilinx # skip this command if you use `xilinx` account already
 cd ~/kobuki_ws/src
 git clone https://github.com/turtlebot/turtlebot.git
 git clone https://github.com/turtlebot/turtlebot_msgs.git
@@ -303,6 +321,7 @@ source ~/.bashrc
 
 On PYNQ-ZU, configure:
 ```
+su xilinx # skip this command if you use `xilinx` account already
 export PC_IP=192.168.1.103 # Change this line to match your PC's IP
 export BOARD_IP=192.168.1.104 # Change this line to match your PYNQ-ZU's IP
 echo 'export ROS_MASTER_URI=http://'$PC_IP':11311' >> ~/.bashrc
