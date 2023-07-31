@@ -173,7 +173,7 @@ started core service [/rosout]
 ### 1.7. Install extra packages & applications
 There are even more packages available in ROS. You can always install a specific package directly.
 ```
-sudo apt install ros-noetic-PACKAGE
+sudo apt install ros-noetic-<PACKAGE>
 ```
 e.g.
 ```
