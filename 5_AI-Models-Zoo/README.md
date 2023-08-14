@@ -16,12 +16,23 @@ User follows this [instruction](https://github.com/Xilinx/Vitis-AI/tree/2.5#inst
 ## 2. DPU-PYNQ - Tools on PYNQ-ZU
 https://github.com/Xilinx/DPU-PYNQ/tree/dev_3.0.0
 
-On PYNQ-ZU, run:
+There are 2 ways to install DPU-PYNQ on PYNQ-ZU: (1) via PyPI and (2) from source.
+
+(1) On PYNQ-ZU, run:
+```
+source /etc/profile.d/pynq_venv.sh
+pip3 install pynq-dpu
+cd $PYNQ_JUPYTER_NOTEBOOKS
+pynq get-notebooks pynq-dpu -p . # Download examples
+```
+
+(2) On PYNQ-ZU, run:
 ```
 git clone -b dev_3.0.0 https://github.com/Xilinx/DPU-PYNQ
+source /etc/profile.d/pynq_venv.sh
 pip3 install ./DPU-PYNQ --no-build-isolation
 cd $PYNQ_JUPYTER_NOTEBOOKS
-pynq get-notebooks pynq-dpu -p .
+pynq get-notebooks pynq-dpu -p . # Download examples
 ```
 
 ## 3. [Tutorial] Make a pre-trained model run on DPU
